@@ -4,7 +4,7 @@
 " License:     MIT
 
 " Bail if our syntax is already loaded.
-if exists('b:current_syntax') && b:current_syntax == 'cue'
+if exists('b:current_syntax') && b:current_syntax == 'cuesheet'
   finish
 endif
 
@@ -15,6 +15,6 @@ syn keyword Type AUDIO WAVE
 syn match Number /\<\d\+\%(:\d\{2}\)*\>/
 syn match String /".\{-}\%(\\\)\@<!"/
 
-let b:current_syntax='cue'
+let b:current_syntax='cuesheet'
 
 " vim: nowrap sw=2 sts=2 ts=8:
