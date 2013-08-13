@@ -11,7 +11,7 @@ endif
 syn case match
 
 syn keyword Keyword REM FILE TRACK INDEX TITLE PERFORMER
-syn keyword Type AUDIO WAVE
+syn keyword Type AUDIO WAVE MP3 AIFF
 syn match Number /[+-]\=\<\d\+\%(\.\d\+\)\=\>/
 syn match Number /\<\d\+\%(:\d\{2}\)\{2}\>/
 syn match String /".\{-}\%(\\\)\@<!"/
