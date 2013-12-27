@@ -9,12 +9,15 @@ if exists('b:current_syntax') && b:current_syntax == 'cuesheet'
 endif
 
 syn case match
+setl conceallevel=2
 
-syn keyword Keyword REM FILE TRACK INDEX TITLE PERFORMER
-syn keyword Type AUDIO WAVE MP3 AIFF
+syn region String matchgroup=cueString start=/"/ skip=/\\"/ end=/"/ transparent contains=NONE
+syn region Comment start=/^REM / end=/$/ contains=specialComment
+syn keyword SpecialComment COMMENT DATE DISCID GENRE
+syn keyword Function FILE INDEX TITLE TRACK PERFORMER
+syn keyword StorageClass AIFF AUDIO MP3 WAVE
 syn match Number /[+-]\=\<\d\+\%(\.\d\+\)\=\>/
 syn match Number /\<\d\+\%(:\d\{2}\)\{2}\>/
-syn match String /".\{-}\%(\\\)\@<!"/
 
 let b:current_syntax='cuesheet'
 
