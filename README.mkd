@@ -9,7 +9,7 @@ This plugin provides support for syntax highlighting of [cue sheet](https://en.w
 1. Add `Plugin 'mgrabovsky/vim-cuesheet'` to your `vimrc`
 2. `vim +PluginInstall +qall`
 
-### Using [Pathogen](https://github.com/gmarik/vundle)
+### Using [Pathogen](https://github.com/tpope/vim-pathogen)
 
 1. `cd ~/.vim/bundle`
 2. `git clone https://github.com/mgrabovsky/vim-cuesheet.git`
