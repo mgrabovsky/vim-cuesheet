@@ -13,7 +13,7 @@ setl conceallevel=2
 
 syn region String matchgroup=cueString start=/"/ skip=/\\"/ end=/"/
       \ transparent contains=NONE
-syn region Comment start=/^REM / end=/$/ contains=specialComment
+syn region Comment start=/^\s*REM / end=/$/ contains=specialComment
 syn keyword SpecialComment COMMENT DATE DISCID GENRE
 syn keyword Function CATALOG CDTEXTFILE FILE FLAGS INDEX ISRC PERFORMER POSTGAP
       \ PREGAP SONGWRITER TITLE TRACK
